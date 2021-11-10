@@ -16,6 +16,7 @@ const BoardsList = () => {
 
     useEffect(() => {
         dispatch(startFetchBoards())
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [successCreate]) // move fetch to page
 
     return (
