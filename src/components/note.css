@@ -1,0 +1,147 @@
+html,body {
+    font-size: 62.5%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+ }
+
+.content-container {
+    margin: 0 auto;
+    padding: 0 1.6rem;
+    /* max-width: 80rem; */
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.canvas {
+    position: absolute;
+    top: 90px;
+}
+
+.container__boardsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.2rem;
+}
+
+.note {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* -webkit-box-shadow: 2px 2px 9px -2px rgba(59, 59, 59, 0.5) inset;
+    -moz-box-shadow: 2px 2px 9px -2px rgba(59, 59, 59, 0.5) inset; */
+}
+
+.note-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-grow: 1;
+    padding: 0px 10px;
+}
+
+.note-header {
+    /* height: 20px; */
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.note-body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-wrap: anywhere;
+    flex-grow: 1;
+}
+
+.note-body::-webkit-scrollbar {
+    width: 8px;
+    background-color: none; 
+}
+
+.note-body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.6); 
+}
+
+.note__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 7px 35px;
+}
+
+.note__button {
+    width: 30%;
+}
+
+.note:hover {
+    z-index: 10000;
+}
+
+/* .note form {
+    width: 100%;
+} */
+
+.react-draggable {
+    /* border: 1px solid rgba(245, 245, 245, 0.6); */
+    border-radius: 4px;
+    box-shadow: 0px 2px 12px -4px rgba(70, 45, 45, 0.4);
+    cursor: pointer; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+/* below is to differentiate between stack and note */
+.react-draggable.note--instance {
+    box-shadow: 0px -7px 0px 0px rgba(245, 245, 245, 0.4) inset,
+                0px 2px 12px -4px rgba(70, 45, 45, 0.4);
+}
+
+.react-draggable:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.react-draggable:hover {
+    z-index: 10000;
+}
+
+.btnIcon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: transparent; /* Blue background */
+    border: none; /* Remove borders */
+    padding: 10px 10px; /* Some padding */
+    font-size: 2.1rem; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    opacity: 0.65;
+}
+
+.btnIcon:focus {
+    outline: none;    
+}
+
+.btnIcon i {
+    transition: .25s;
+}
+
+.note__button i:hover {
+    /* color: #f1f1f1; */
+    color: #fff;
+}
+
+.loader {
+    /* display: inline-block; */
+    height: 85%;
+    width: 85%;
+    object-fit: scale-down;
+    /* padding: 10px 10px; */
+}

@@ -1,0 +1,13 @@
+.boardForm {
+    display: flex;
+}
+
+.button--create {
+    margin-left: .5rem;
+}
+
+.boardForm__input {
+    border: 1px solid #5a5a5a;
+    border-radius: .7rem;
+    padding: .75rem;
+}

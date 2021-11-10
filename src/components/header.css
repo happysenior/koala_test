@@ -1,0 +1,41 @@
+header {
+    background: #fff;
+    color: #2A9D8F;
+    /* color: #649986; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem 3rem 1.6rem 3rem;
+} 
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    font-size: 3.5rem;
+}
+
+.header__appName {
+    margin-left: 1.6rem;
+}
+
+.header__userArea {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+}
+
+.header__photo {
+    margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.header__userName {
+    display: flex;
+    flex-direction: column;
+}
+
+.button--logout {
+    margin-top: 0.5rem;
+}

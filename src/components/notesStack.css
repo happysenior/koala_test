@@ -1,0 +1,18 @@
+.note__info {
+  /* margin: 0; */
+  margin: auto;
+}
+
+.pickerButton {
+  background-color: rgba(256,256,256, 0.4);
+  border-radius: 4px; /* same as react draggable in notes */
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.pickerButton:hover {
+  background-color: rgba(256,256,256, 0.8)
+}

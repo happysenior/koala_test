@@ -1,0 +1,43 @@
+
+.boardsList {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    margin-top: 3.2rem;
+    /* padding: 0 1.6rem; */
+}
+
+.boardsList__boardCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2A9D8F;
+    border-radius: 4px;
+    width: 20rem;
+    margin: 1.6rem;
+    transition: 0.25s;
+}
+
+.boardsList__boardCard a {
+    text-decoration: none;
+    color: #2A9D8F;
+}
+
+.boardsList__boardCard a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.boardsList__boardCard:hover {
+    background: #2A9D8F;
+}
+
+.boardCard__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1.6rem;
+}

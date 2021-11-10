@@ -1,0 +1,78 @@
+.editNote {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.editNote__inputs {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.editNote__title {
+    border: 1px solid #807b7b;
+    border-radius: 4px;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    color: #807b7b;
+    font-weight: bold;
+    margin-top: 5px;
+    min-width: 100%;
+    padding: 15px 10px 10px 10px;
+    width: 100%;
+    background-color: white;
+}
+
+.editNote__text {
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    border: 1px solid #807b7b;
+    border-radius: 4px;
+    background-color: white;
+    color: #807b7b;
+    flex-grow: 1;
+    font-family: "Roboto", sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    resize: none;
+    min-width: 100%;
+    width: 100%;
+}
+
+.editNote__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 15px 15px 15px;
+}
+
+.editNote__button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    margin: auto 5px;
+    padding: 0.7rem;
+}
+
+textarea {
+    border: none;
+}
+
+.form--boardEdit {
+    display: flex;
+    height: 100%;
+    margin-top: 1rem;
+}
+
+.form--boardEdit input {
+    /* sccs the same font size as before edit, delete or move elsewere */
+    font-weight: bold;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
